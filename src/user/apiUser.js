@@ -36,6 +36,8 @@ export const update = (userId, token, user) => {
     });
 };
 
+
+//setting the updated user profile information to the local storage after updating the user profile information
 export const updateUser = (user, next) => {
   if (typeof window !== 'undefined') {
     if (localStorage.getItem('jwt')) {
