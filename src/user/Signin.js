@@ -6,7 +6,7 @@ const Signin = () => {
   const [values, setValues] = useState({
     name: '',
     email: 'guntha.rahul9@gmail.com',
-    password: 'rahulg27',
+    password: 'Rahulg@1997',
     error: '',
     loading: false,
     redirectToReferer: false,

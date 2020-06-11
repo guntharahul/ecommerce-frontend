@@ -12,6 +12,7 @@ import AdminDashboard from './user/AdminDashboard';
 import AddCategory from './admin/AddCategory';
 import AddProduct from './admin/AddProduct';
 import Orders from './admin/Orders';
+import ManageProducts from './admin/ManageProducts';
 import Product from './core/Product';
 import Cart from './core/Cart';
 
@@ -43,6 +44,10 @@ const Routes = () => {
         ></AdminRoute>
         <AdminRoute path='/create/product' component={AddProduct}></AdminRoute>
         <AdminRoute path='/admin/orders' component={Orders}></AdminRoute>
+        <AdminRoute
+          path='/admin/products'
+          component={ManageProducts}
+        ></AdminRoute>
       </Switch>
     </BrowserRouter>
   );
