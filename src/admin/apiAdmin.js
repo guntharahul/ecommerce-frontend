@@ -110,7 +110,7 @@ export const updateOrderStatus = (userId, token, orderId, status) => {
 
 // get All products
 export const getProducts = () => {
-  return fetch(`${API}/products`, { method: 'GET' })
+  return fetch(`${API}/products?limit=undefined`, { method: 'GET' }) // we gave limit as undefined to fetch all the products from the database
     .then((response) => {
       return response.json();
     })
