@@ -50,9 +50,7 @@ const ManageProducts = () => {
               >
                 <strong>{p.name}</strong>
                 <Link to={`/admin/product/update/${p._id}`}>
-                  <span className='badge badge-warning badge-pill'>
-                    Update page
-                  </span>
+                  <span className='badge badge-warning badge-pill'>Update</span>
                 </Link>
                 <span
                   onClick={() => {
